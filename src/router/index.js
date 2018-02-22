@@ -12,35 +12,11 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'homeMenu',
-      component: HomeMenu,
-    },
-    {
-      path: '/houses/',
-      name: 'HouseMenu',
-      component: HouseMenu,
-    },   
-    {
-      path: '/characters/',
-      name: 'CharacterMenu',
-      component: CharacterMenu,
-    },   
-    {
-      path: '/books/',
-      name: 'BooksMenu',
-      component: BooksMenu,
-    },   
-    {
-      path: '/map/',
-      name: 'MapWorld',
-      component: MapWorld,
-    },
-    {
-      path: '/about/',
-      name: 'AboutProject',
-      component: AboutProject,
-    },
+    { path: '/',  name: 'homeMenu', component: HomeMenu,  },
+    { path: '/houses/', name: 'HouseMenu',  component: HouseMenu, },   
+    { path: '/characters/', name: 'CharacterMenu',  component: CharacterMenu,  },   
+    { path: '/books/',  name: 'BooksMenu',  component: BooksMenu, },   
+    { path: '/map/',  name: 'MapWorld', component: MapWorld, },
+    { path: '/about/',  name: 'AboutProject', component: AboutProject, },
   ],
 });
