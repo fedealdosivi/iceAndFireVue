@@ -1,8 +1,11 @@
 <template>
       <md-toolbar class="my-toolbar" md-elevation="1">
-      <h3 class="my-title">Ice and Fire</h3>
-      <md-button class="my-title" :href="'/#/House'">Houses</md-button>
-      <md-button class="my-title" :href="'/#/Character'">Characters</md-button>
+      <h3 class="my-title">Song of Ice and Fire</h3>
+      <md-button class="my-title" :href="'/#/books'">Books</md-button>
+      <md-button class="my-title" :href="'/#/houses'">Houses</md-button>
+      <md-button class="my-title" :href="'/#/characters'">Characters</md-button>
+      <md-button class="my-title" :href="'/#/map'">Map of the world</md-button>
+      <md-button class="my-title" :href="'/#/about'">About the Project</md-button>
     </md-toolbar>
 </template>
 
