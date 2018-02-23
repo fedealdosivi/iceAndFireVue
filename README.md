@@ -6,6 +6,10 @@
 
 > https://fpalomero-iceandfire.herokuapp.com/#/
 
+# Link to the API repository
+
+> https://github.com/joakimskoog/AnApiOfIceAndFire
+
 ## Build Setup
 
 ``` bash
@@ -29,4 +33,3 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# iceAndFireVue
