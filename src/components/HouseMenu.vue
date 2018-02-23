@@ -1,21 +1,29 @@
 <template>
   <div class="cards-container">
-      <h3 v-if="loading">LOADING PAGE</h3>
+      <div v-if="loading">
+        <md-progress-spinner md-mode="indeterminate"></md-progress-spinner>
+      </div>
       <h3 v-if="houses.lenght<1">Nothing here</h3>
       <div v-else>
-        <md-card class="my-card" md-with-hover v-for="(h,index) in houses" :key="index">
+        <md-card md-with-hover v-for="(h,index) in houses" :key="index">
           <md-ripple>
             <md-card-header>
-              <div class="md-title">Card with hover effect</div>
-              <div class="md-subhead">It also have a ripple</div>
+              <div class="md-title">{{h.name}}</div>
+              <div class="md-subhead">{{h.words}}</div>
             </md-card-header>
-
             <md-card-content>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
+              <div v-if="h.coatOfArms!=''">
+              <h3>Coat of Arms</h3>
+              {{h.coatOfArms}}
+              </div>
+              <div v-if="h.region!=''">
+              <h3>Region</h3>
+              {{h.region}}
+              </div>
             </md-card-content>
 
             <md-card-actions>
-              <md-button>Action</md-button>
+              <md-button>Discover Lord</md-button>
               <md-button>Action</md-button>
             </md-card-actions>
           </md-ripple>
@@ -32,6 +40,7 @@ export default {
     return {
       houseFilter:'',
       houses:[],
+      counter:0,
       loading:false
     };
   },
@@ -66,8 +75,10 @@ export default {
   display: inline-block;
   align-items: flex-start;
 }
-.my-card{
-  margin:5px,5px,5px,5px;
+
+.md-card{
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 </style>
 
