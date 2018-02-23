@@ -2,6 +2,10 @@
 
 > vue.js Song of ice and Fire project
 
+# Preview
+
+> https://fpalomero-iceandfire.herokuapp.com/#/
+
 ## Build Setup
 
 ``` bash
