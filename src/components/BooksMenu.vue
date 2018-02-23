@@ -78,6 +78,8 @@ export default {
 .md-card{
   margin-bottom: 5%;
   margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 </style>
 
