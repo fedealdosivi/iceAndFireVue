@@ -3,7 +3,7 @@
       <div v-if="loading">
         <md-progress-spinner md-mode="indeterminate"></md-progress-spinner>
       </div>
-      <h3 v-if="houses.lenght<1">Nothing here</h3>
+      <h3 v-if="houses.length<1">Nothing here</h3>
       <div v-else>
         <md-card md-with-hover v-for="(h,index) in houses" :key="index">
           <md-ripple>
@@ -59,7 +59,7 @@ export default {
                       this.loading=false;
                   })
                   .catch((error) => {
-                      this.houses=null;
+                      this.houses=[];
                       this.loading=false;
                   })
                }

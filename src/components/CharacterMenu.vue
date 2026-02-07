@@ -3,7 +3,7 @@
       <div v-if="loading">
         <md-progress-spinner md-mode="indeterminate"></md-progress-spinner>
       </div>
-      <h3 v-if="characters.lenght<1">Nothing here</h3>
+      <h3 v-if="characters.length<1">Nothing here</h3>
       <div v-else>
         <md-card md-with-hover v-for="(c,index) in characters" :key="index">
           <md-ripple>
@@ -61,7 +61,7 @@ export default {
                       this.loading=false;
                   })
                   .catch((error) => {
-                      this.characters=null;
+                      this.characters=[];
                       this.loading=false;
                   })
                }
