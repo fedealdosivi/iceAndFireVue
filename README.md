@@ -4,7 +4,7 @@
 
 # Preview
 
-> https://fpalomero-iceandfire.herokuapp.com/#/
+> https://iceandfirevue.onrender.com/
 
 # Link to the API repository
 
