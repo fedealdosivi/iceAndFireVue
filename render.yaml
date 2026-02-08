@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: iceandfire
+    runtime: node
+    plan: free
+    buildCommand: npm install --ignore-scripts && npm run build
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18
