@@ -1,7 +1,9 @@
 # Dependencies
 node_modules/
 
-# Build output
+# Nuxt build output
+.nuxt/
+.output/
 dist/
 
 # Environment files
@@ -26,3 +28,6 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Nitro
+.nitro/

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(97, 92, 92, 0.26);
+}
